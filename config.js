@@ -25,7 +25,7 @@ module.exports = {
     name: 'Peter Chun',
     photo: '/photo2.png',
     photoLarge: '/photo2-large.png',
-    bio: 'Computer Science at the University of Maryland, College Park. I blog about <a href="/tag/web-development/">web development</a>, <a href="/tag/machine-learning/">machine learning</a>, <a href="/tag/programming/">programming</a>, and <a href="/tags/">more</a>.',
+    bio: 'Computer Science at the University of Maryland, College Park. I blog about <a href="/tag/web-development/">web development</a>, <a href="/tag/programming/">programming</a>, and <a href="/tags/">more</a>.',
     contacts: {
       email: 'peterchun2000@gmail.com',
       github: 'peterchun2000',

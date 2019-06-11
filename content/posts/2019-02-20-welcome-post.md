@@ -9,6 +9,7 @@ img: "https://www.provost.umd.edu/images/UMDAerial.jpg"
 category: "Announcements"
 tags:
   - "announcement"
+  - "web development"
 description: Introducing my Blog and Website.
 prev: "/blog/tracking-amazon-prices-for-free/"
 next: "/blog/best-room-in-cambridge-hall/"
