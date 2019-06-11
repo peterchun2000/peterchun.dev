@@ -39,11 +39,8 @@ const Post = ({ post, prevPost, nextPost }) => {
       <div className={styles['post__viewSource']}>
         <p>
           <i>
-            This blog is{' '}
-            <a href="https://github.com/vzhou842/victorzhou.com" target="_blank">
-              open-source on Github
-            </a>
-            .
+            Check out my {' '}
+            <a href="https://photos.app.goo.gl/KhHRGukmghLoxf299" target="_blank">photos</a>
           </i>
         </p>
       </div>
