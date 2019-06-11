@@ -44,10 +44,8 @@ export const MovableSidebarContent = (props: Props) => (
           siteMetadata {
             author {
               contacts {
-                twitter
                 github
                 email
-                rss
               }
             }
             copyright

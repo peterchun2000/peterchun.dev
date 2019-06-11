@@ -21,12 +21,12 @@ export const PureAuthor = ({ author, showBio, showTwitter }) => {
             <Link className={styles['author__header-right-name-link']} to="/" rel="author">
               {author.name}
             </Link>
-            {showTwitter && ' '}
+            {/* {showTwitter && ' '}
             {showTwitter && (
-              <a style={{ fontWeight: 500 }} href="https://twitter.com/victorczhou" target="_blank">
-                @victorczhou
+              <a style={{ fontWeight: 500 }} href="https://twitter.com/asdf" target="_blank">
+                @asdf
               </a>
-            )}
+            )} */}
           </h4>
           {showBio && (
             <p

@@ -48,7 +48,7 @@ export const Share = ({ url, ...props }: Props) => (
             url
             author {
               contacts {
-                twitter
+                github
               }
             }
           }

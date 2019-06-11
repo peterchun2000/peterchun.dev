@@ -41,10 +41,10 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   "name": "${author.name}",
   "url": "https://victorzhou.com",
   "sameAs": [
-    "https://www.facebook.com/zhouvictor",
-    "https://twitter.com/victorczhou",
-    "https://www.instagram.com/victorczhou/",
-    "https://www.linkedin.com/in/vzhou842/"
+    "https://www.facebook.com/peterchun99",
+    "https://twitter.com/asdf",
+    "https://www.instagram.com/peter.chun_/",
+    "https://www.linkedin.com/in/peter-chun-021569155/"
   ]
 }`
             }
