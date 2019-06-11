@@ -22,14 +22,14 @@ const SubscribeForm = ({ signupSource, large, noDescription, noSpacing, onKeyDow
       </p>
     )}
     <form
-      action={`https://victorzhou.us20.list-manage.com/subscribe/post?SIGNUP=${encodeURIComponent(
+      action={`https://gmail.us20.list-manage.com/subscribe/post?SIGNUP=${encodeURIComponent(
         signupSource,
       )}`}
       method="post"
       target="_blank"
     >
-      <input type="hidden" name="u" value="7cd5089a9bbc5253e6890ae15" />
-      <input type="hidden" name="id" value="9f367a1f47" />
+      <input type="hidden" name="u" value="227a302c7732f74313b18dcd7" />
+      <input type="hidden" name="id" value="f92846f902" />
       <input
         type="email"
         autoCapitalize="off"
