@@ -1,6 +1,6 @@
 ---
 title: Tracking Amazon Prices for Free
-date: "2019-02-25T12:00:00.000Z"
+date: "2019-03-12T12:00:00.000Z"
 template: "post"
 usesKatex: true
 draft: false

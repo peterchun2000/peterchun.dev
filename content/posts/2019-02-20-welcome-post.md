@@ -22,6 +22,6 @@ I programmed this website using the `Gatsby` framework, and built upon Victor 
 
 My goal here is not only to showcase what I've expereinced, but also the experience of others, which is why I also am planning to hire editors to write and comment on blog posts. 
 
-This is actually my second version of my personal website. You can check out my previous version [here](https://peterchun.dev) and my previous blog [here](https://studentoverflow.herokuapp.com/posts/5), which both used `Ruby on Rails`. 
+This is actually my second version of my personal website. You can check out my previous version [here](https://radiant-tundra-27378.herokuapp.com/) and my previous blog [here](https://studentoverflow.herokuapp.com/posts/5), which both used `Ruby on Rails`. 
 
 > If you want to conquer fear, don't sit home and think about it. Go out and get busy. - Dale Carnegie
