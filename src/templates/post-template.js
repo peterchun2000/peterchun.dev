@@ -135,7 +135,6 @@ export const fragment = graphql`
           }
           frontmatter {
             asyncScript
-            canonical
             category
             date
             description
@@ -143,10 +142,6 @@ export const fragment = graphql`
             slug
             tags
             title
-            twitterEmbed
-            discussLinkTwitter
-            discussLinkHN
-            discussLinkReddit
           }
         }
       }
