@@ -1,10 +1,9 @@
-# victorzhou.com
+# peterchun.dev
 
-[![Build Status](https://travis-ci.com/vzhou842/victorzhou.com.svg?branch=master)](https://travis-ci.com/vzhou842/victorzhou.com)
-
-This is a site built with [Gatsby.js](https://www.gatsbyjs.org/) using [gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen). To get started:
+This is a site built with [Gatsby.js](https://www.gatsbyjs.org/) using [victor zhou's template](https://github.com/vzhou842/victorzhou.com). To get started:
 
 ```bash
 npm install
 npm run develop
 ```
+If ^ that doesn't work delete ```package-lock.json``` and try again.
