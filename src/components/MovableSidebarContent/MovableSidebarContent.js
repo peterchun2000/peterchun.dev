@@ -5,7 +5,7 @@ import SubscribeForm from '../SubscribeForm';
 import Contacts from '../Contacts';
 import Copyright from '../Copyright';
 import DisplayIf from '../DisplayIf';
-import CarbonAd from '../CarbonAd';
+// import CarbonAd from '../CarbonAd';
 
 type Props = {
   +mobile: ?boolean,
@@ -29,7 +29,7 @@ export const PureMovableSidebarContent = ({
       {!hideSubscribeForm && (
         <SubscribeForm signupSource={`Sidebar:${mobile ? 'mobile' : 'desktop'}`} />
       )}
-      {desktop && <CarbonAd />}
+      {/* {desktop && <CarbonAd />} */}
       <Contacts contacts={author.contacts} />
       <Copyright copyright={copyright} />
     </DisplayIf>

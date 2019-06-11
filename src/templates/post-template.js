@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import NavHeader from '../components/NavHeader';
 import SubscribePopup from '../components/SubscribePopup';
-import CarbonAd from '../components/CarbonAd';
+// import CarbonAd from '../components/CarbonAd';
 
 type Props = {|
   +data: Object,
@@ -102,7 +102,7 @@ const PostTemplate = ({ data, pageContext }: Props) => {
           right: 'calc(((100% - 700px) / 2 - 150px) / 2)',
         }}
       >
-        <CarbonAd largeOnly />
+        {/* <CarbonAd largeOnly /> */}
       </div>
     </div>
   );

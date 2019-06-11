@@ -9,7 +9,7 @@ import Author from '../Author';
 import SubscribeForm from '../SubscribeForm';
 import Share from '../Share';
 import Discuss from '../Discuss';
-import CarbonAd from '../CarbonAd';
+// import CarbonAd from '../CarbonAd';
 
 const Post = ({ post, prevPost, nextPost }) => {
   const {
@@ -50,7 +50,7 @@ const Post = ({ post, prevPost, nextPost }) => {
 
       <div className={styles['post__footer']}>
         <Tags tags={tags} tagSlugs={tagSlugs} />
-        <CarbonAd smallOnly />
+        {/* <CarbonAd smallOnly /> */}
         <ReadMore prevPost={prevPost} nextPost={nextPost} />
         <div className={styles['post__authorContainer']}>
           <Author showBio showTwitter />

@@ -5,7 +5,7 @@ module.exports = {
   title: 'peterchun.dev',
   subtitle: 'Computer Science at the University of Maryland, College Park. I blog about web development, machine learning, programming, and more.',
   copyright: '© Peter Chun 2019',
-  postsPerPage: 8,
+  postsPerPage: 5,
   googleAnalyticsId: 'UA-58664433-1',
   menu: [
     {
