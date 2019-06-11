@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "victorzhou.com",
+  "name": "peterchun.dev",
   "description": "",
   "main": "n/a",
   "scripts": {
@@ -18,7 +18,7 @@
     "test:watch": "jest --watch --config ./tests/jest-config.js"
   },
   "repository": "",
-  "author": "Victor Zhou <vzhou842@gmail.com>",
+  "author": "Peter Chun <peterchun2000@gmail.com>",
   "license": "MIT",
   "keywords": [],
   "dependencies": {
