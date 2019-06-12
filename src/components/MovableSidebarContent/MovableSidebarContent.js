@@ -46,6 +46,7 @@ export const MovableSidebarContent = (props: Props) => (
               contacts {
                 github
                 email
+                linkedin
               }
             }
             copyright
