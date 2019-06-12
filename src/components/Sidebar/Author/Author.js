@@ -12,8 +12,8 @@ const Author = ({ author }) => (
         <Link className={styles['author__title-link']} to="/">
           {author.name}
         </Link>{' '}
-        <a style={{ fontWeight: 500 }} href="https://www.linkedin.com/in/peter-chun-021569155/" target="_blank">
-          linkedin
+        <a style={{ fontWeight: 500 }} href="/Peter_Chun_Resume.pdf" target="_blank">
+          Resume
         </a>
       </h2>
     </div>
