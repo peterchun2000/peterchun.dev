@@ -8,9 +8,10 @@ slug: "/blog/tracking-amazon-prices-for-free/"
 img: "https://images-na.ssl-images-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png"
 category: "Automation"
 tags:
-  - "python"
-  - "selenium"
-  - "programming"
+  - "Automation"
+  - "Selenium"
+  - "Programming"
+  - "Python"
 description: How to use Python, GroupMe, and Google Cloud to track pricing changes on Amazon.
 prev: "/blog/welcome-post/"
 next: "/blog/best-room-in-cambridge-hall/"
