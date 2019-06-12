@@ -29,7 +29,8 @@ module.exports = {
     contacts: {
       email: 'peterchun2000@gmail.com',
       github: 'peterchun2000',
-      linkedin: 'peter-chun-021569155',
+      linkedin: 'peter-chun-021569155'
+      rss: '/rss.xml',
     }
   }
 };
