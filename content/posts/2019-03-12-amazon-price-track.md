@@ -125,5 +125,5 @@ post_params = { 'bot_id' : 'insert_botID_here', 'text': "your string response" }
 Now Your Done!!!
 ----------------
 
-For my version of the finished product go to my github repositorty: <https://github.com/peterchun2000/amazonBot>
+For my version of the finished product go to my github repository: <https://github.com/peterchun2000/amazonBot>
 
