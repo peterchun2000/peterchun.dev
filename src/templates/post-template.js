@@ -29,13 +29,11 @@ const PostTemplate = ({ data, pageContext }: Props) => {
 
   const {
     asyncScript,
-    canonical,
     category,
     date,
     img: imgUrl,
     title: postTitle,
     description: postDescription,
-    twitterEmbed,
   } = slugNode.frontmatter;
   const { readingTime } = slugNode.fields;
 
@@ -46,12 +44,12 @@ const PostTemplate = ({ data, pageContext }: Props) => {
       <NavHeader />
       <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
         <Helmet>
-          {canonical && <link rel="canonical" href={canonical} />}
+          {/* {canonical && <link rel="canonical" href={canonical} />} */}
           <meta property="og:type" content="article" />
           <meta property="og:image" content={imgUrl} />
-          {twitterEmbed && (
+          {/* {twitterEmbed && (
             <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8" />
-          )}
+          )} */}
           {asyncScript && (
             <script async src={asyncScript} />
           )}
