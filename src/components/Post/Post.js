@@ -40,7 +40,7 @@ const Post = ({ post, prevPost, nextPost }) => {
         <p>
           <i>
             Check out my {' '}
-            <a href="https://photos.app.goo.gl/KhHRGukmghLoxf299" target="_blank">photos</a>
+            <a href="https://photos.app.goo.gl/KhHRGukmghLoxf299" target="_blank">photography page</a>
           </i>
         </p>
       </div>

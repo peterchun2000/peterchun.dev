@@ -18,7 +18,7 @@ const SubscribeForm = ({ signupSource, large, noDescription, noSpacing, onKeyDow
   >
     {!noDescription && (
       <p className={styles['description']}>
-        <b>Subscribe</b> to know whenever I post new content. I don't spam!
+        <b>Subscribe 🚀</b> There's more to it than just weekly newsletters.<br/> <b>Join</b> the club to find out 🤫
       </p>
     )}
     <form
@@ -36,7 +36,7 @@ const SubscribeForm = ({ signupSource, large, noDescription, noSpacing, onKeyDow
         autoCorrect="off"
         name="MERGE0"
         size="25"
-        placeholder="example@domain.com"
+        placeholder="bentz@umd.edu"
         aria-label="Email Address"
         onKeyDown={onKeyDown}
       />
