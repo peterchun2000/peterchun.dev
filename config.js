@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'Computer Science at the University of Maryland, College Park (UMD). I blog about web development, machine learning, programming, and more.',
   copyright: '© Peter Chun 2019',
   postsPerPage: 5,
-  googleAnalyticsId: 'UA-58664433-1',
+  googleAnalyticsId: 'UA-142044093-1',
   menu: [
     {
       label: 'Blog',
