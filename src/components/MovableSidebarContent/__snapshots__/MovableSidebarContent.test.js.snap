@@ -16,7 +16,7 @@ exports[`MovableSidebarContent renders correctly 1`] = `
        to know whenever I post new content. I don't spam!
     </p>
     <form
-      action="https://victorzhou.us20.list-manage.com/subscribe/post?SIGNUP=Sidebar%3Adesktop"
+      action="https://gmail.us20.list-manage.com/subscribe/post?SIGNUP=Sidebar%3Adesktop"
       method="post"
       target="_blank"
     >

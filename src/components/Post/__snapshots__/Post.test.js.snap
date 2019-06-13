@@ -50,7 +50,7 @@ exports[`Post renders correctly 1`] = `
          to know whenever I post new content. I don't spam!
       </p>
       <form
-        action="https://victorzhou.us20.list-manage.com/subscribe/post?SIGNUP=Post%3Atest"
+        action="https://gmail.us20.list-manage.com/subscribe/post?SIGNUP=Post%3Atest"
         method="post"
         target="_blank"
       >
@@ -90,7 +90,7 @@ exports[`Post renders correctly 1`] = `
         This blog is
          
         <a
-          href="https://github.com/vzhou842/victorzhou.com"
+          href="#"
           target="_blank"
         >
           open-source on Github

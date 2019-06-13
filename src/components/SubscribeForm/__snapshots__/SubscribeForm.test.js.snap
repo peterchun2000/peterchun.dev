@@ -13,7 +13,7 @@ exports[`SubscribeForm renders default correctly 1`] = `
      to know whenever I post new content. I don't spam!
   </p>
   <form
-    action="https://victorzhou.us20.list-manage.com/subscribe/post?SIGNUP=test"
+    action="https://gmail.us20.list-manage.com/subscribe/post?SIGNUP=test"
     method="post"
     target="_blank"
   >
@@ -59,7 +59,7 @@ exports[`SubscribeForm renders large correctly 1`] = `
      to know whenever I post new content. I don't spam!
   </p>
   <form
-    action="https://victorzhou.us20.list-manage.com/subscribe/post?SIGNUP=test"
+    action="https://gmail.us20.list-manage.com/subscribe/post?SIGNUP=test"
     method="post"
     target="_blank"
   >

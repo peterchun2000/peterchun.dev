@@ -40,7 +40,7 @@ exports[`PostTemplate renders correctly 1`] = `
       className="container  no-spacing"
     >
       <form
-        action="https://victorzhou.us20.list-manage.com/subscribe/post?SIGNUP=Popup%3Atest"
+        action="https://gmail.us20.list-manage.com/subscribe/post?SIGNUP=Popup%3Atest"
         method="post"
         target="_blank"
       >

@@ -27,7 +27,7 @@ exports[`Author renders correctly 1`] = `
       </Link>
        
       <a
-        href="https://twitter.com/victorczhou"
+        href="https://twitter.com/#"
         style={
           Object {
             "fontWeight": 500,
@@ -35,7 +35,7 @@ exports[`Author renders correctly 1`] = `
         }
         target="_blank"
       >
-        @victorczhou
+        @#
       </a>
     </h2>
   </div>
