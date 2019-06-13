@@ -36,7 +36,7 @@ const SubscribeForm = ({ signupSource, large, noDescription, noSpacing, onKeyDow
         autoCorrect="off"
         name="MERGE0"
         size="25"
-        placeholder="bentz@umd.edu"
+        placeholder="terps@umd.edu"
         aria-label="Email Address"
         onKeyDown={onKeyDown}
       />
