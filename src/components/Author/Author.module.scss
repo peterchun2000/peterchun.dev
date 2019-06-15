@@ -4,7 +4,7 @@
 .author {
   @include padding-equal(0.25);
   @include margin(0.5, 0, 0.5, 0);
-
+  
   &__header {
     display: flex;
     flex-direction: row;
@@ -29,8 +29,7 @@
           color: $color-base;
 
           &:hover {
-            color: $color-base;
-            border-bottom: 1px solid $color-base;
+            color: $color-secondary;
           }
         }
       }
