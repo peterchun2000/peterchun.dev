@@ -5,7 +5,7 @@
   max-width: $layout-post-single-width;
   padding: 0 $layout-mobile-padding;
   margin: 0 auto;
-
+  
   &__title, &__subtitle, &__date {
     max-width: $layout-post-width;
     margin: 0 auto;
@@ -290,8 +290,7 @@
       h2 > a {
         display: block;
         box-shadow: inset -4px 0px 0px $color-secondary;
-        margin-right: 5px;
-        width: 8px;
+        width: 10px;
       }
       // stylelint-enable
     }
