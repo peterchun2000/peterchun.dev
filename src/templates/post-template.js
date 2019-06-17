@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import NavHeader from '../components/NavHeader';
-import SubscribePopup from '../components/SubscribePopup';
+// import SubscribePopup from '../components/SubscribePopup';
 // import CarbonAd from '../components/CarbonAd';
 
 type Props = {|
@@ -92,7 +92,8 @@ const PostTemplate = ({ data, pageContext }: Props) => {
         </Helmet>
         <Post post={slugNode} prevPost={prevNode} nextPost={nextNode} />
       </Layout>
-      <SubscribePopup postSlug={slug} />
+      {/* removed SubscribePopup*/}
+      {/* <SubscribePopup postSlug={slug} /> */}
       <div
         style={{
           position: 'absolute',
