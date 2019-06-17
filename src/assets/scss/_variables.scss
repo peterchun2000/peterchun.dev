@@ -3,16 +3,17 @@
  */
 
 // Colors
-$color-base: #222;
-$color-primary: #754F4F;
-$color-secondary: #9aabb9;
-$color-secondary-light: rgb(202, 230, 255);
+$color-background: rgb(255, 255, 255);
+$color-base: rgb(0, 0, 0);
+$color-primary: #612766;
+$color-secondary: rgb(66, 163, 120);
+$color-secondary-light: rgba(79, 192, 141, 0.575);
 
-$color-white: #FFF;
-$color-gray: lighten($color-base, 35%);
+$color-white: #9D8D8F;
+$color-gray: lighten($color-base, 7%);
 $color-gray-shadow: lighten($color-base, 60%);
 $color-gray-border: lighten($color-base, 77%);
-$color-gray-bg: lighten($color-base, 82%);
+$color-gray-bg: rgb(236, 236, 236);
 
 $color-primary-light: lighten($color-primary, 50%);
 
