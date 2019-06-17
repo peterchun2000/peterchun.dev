@@ -6,7 +6,7 @@
 $color-background: rgb(255, 255, 255);
 $color-base: rgb(0, 0, 0);
 $color-primary: #612766;
-$color-secondary: rgb(66, 163, 120);
+$color-secondary: rgb(103, 167, 130);
 $color-secondary-light: rgba(79, 192, 141, 0.575);
 
 $color-white: #9D8D8F;
@@ -34,8 +34,8 @@ $typographic-base-line-height: 1.625;
 
 $typographic-base-font-color: $color-base;
 $typographic-light-font-color: $color-gray;
-$typographic-link-p-font-color: $color-primary;
-$typographic-link-s-font-color: $color-secondary;
+$typographic-link-p-font-color: $color-secondary;
+$typographic-link-s-font-color: $color-primary;
 
 $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
 

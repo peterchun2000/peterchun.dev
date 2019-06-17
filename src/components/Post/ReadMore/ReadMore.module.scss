@@ -19,7 +19,12 @@
   &-links {
     display: flex;
     flex-direction: column;
-
+    a {
+      color: $color-primary;
+    }
+    a:hover {
+      color: $color-secondary;
+    }
     > div {
       flex: 1;
       background-color: $color-gray-bg;
