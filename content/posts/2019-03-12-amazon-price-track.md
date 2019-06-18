@@ -20,11 +20,10 @@ next: "/blog/best-room-in-cambridge-hall/"
 The Problem:
 ------------
 
-I wan to be notified when a product on Amazon goes down in price. But the websites that do offer this service require $$ or have lots of restrictions.
+I want to be notified when a product on Amazon goes down in price. But the websites that do offer this service require $$ or have lots of restrictions.
 
 The Plan:
 ---------
-
 1.  Program a Python script that continuously tracks a webpage for any price changes
 2.  Add a feature to be notified through a GroupMe chat bot.
 3.  Have the program run on a Google Cloud Computing server for free
@@ -70,7 +69,7 @@ driver = se.webdriver.Chrome(options=options)
 ```
 ### Getting the Web Page & Price:
 
-### The Amazon product you want to track
+Place Amazon product you want to track
 ```python
 driver.get("https://www.amazon.com/Sony-Noise-Cancelling-Headphones-WH1000XM3/dp/B07G4MNFS1/ref=sr_1_2?crid=N5OCS4NJDH4M&keywords=sony+wh-1000xm3&qid=1551040801&s=gateway&sprefix=sony+%2Caps%2C120&sr=8-2")
 ```
@@ -109,18 +108,15 @@ If everything worked out with no errors, lets move on to getting GroupMe setup.
 
 GroupMe:
 --------
-
 Go to the GroupMe dev page [here](https://dev.groupme.com/), and have a Groupme account and make a group with only you in it.\
-1\. Click on the Bots tab -> login -> Create Bot 
-
-2\. Select a group, name the bot something, and you can leave the other fields blank
-
-3\. copy the bot id and you can copy and paste it into the code below: 
+1. Click on the Bots tab -> login -> Create Bot 
+2. Select a group, name the bot something, and you can leave the other fields blank
+3. copy the bot id and you can copy and paste it into the code below: 
 ```python
 post_params = { 'bot_id' : 'insert_botID_here', 'text': "your string response" }
         requests.post('https://api.groupme.com/v3/bots/post', params = post_params)
 ```
-4\. Place the cope snippet anywhere you want to send a message to your phone
+4. Place the cope snippet anywhere you want to send a message to your phone
 
 Now Your Done!!!
 ----------------

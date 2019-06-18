@@ -1,10 +1,31 @@
 import React from 'react';
+import Radium from 'radium';
+import color from 'color';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 import MovableSidebarContent from '../components/MovableSidebarContent';
+var bgColors = { "Default": "#81b71a",
+                    "Purple": "#612766",
+                    "White": "rgb(236, 236, 236)",
+                    "Green": "rgb(103, 167, 130)",
+};
+var styles = {
+  base: {
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+  },
+};
+var styles2 = {
+  base: {
+    padding: '5px' && '5px',
+    display: 'inline-block',
+    backgroundColor: bgColors.White,
+    textAlign: 'center',
+  },
+}
 
 const TagsListTemplate = ({ data }) => {
   const {
@@ -20,9 +41,10 @@ const TagsListTemplate = ({ data }) => {
         <Page title="Tags">
           <ul>
             {group.map((tag) => (
-              <li key={tag.fieldValue}>
-                <Link to={`/tag/${kebabCase(tag.fieldValue)}/`}>
-                  {tag.fieldValue} ({tag.totalCount})
+              <li key={tag.fieldValue} style={styles2.base}>
+                <Link to={`/tag/${kebabCase(tag.fieldValue)}/`} style={styles.base} >
+                  {tag.fieldValue}
+                  {/* {tag.totalCount} */}
                 </Link>
               </li>
             ))}

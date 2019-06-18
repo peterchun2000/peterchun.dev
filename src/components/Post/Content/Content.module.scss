@@ -36,8 +36,23 @@
 
   &__body {
     p, li {
-      font-size: $typographic-base-font-size * 1.125;
-      @include line-height(1.125);
+      font-size: $typographic-base-font-size * 1.1;
+      @include line-height(1.25);
+    }
+    :not(h3) a { 
+      text-decoration: none;
+      color: $color-base;
+      box-sizing: border-box;
+      box-shadow: inset 0 -4px 0 $color-secondary-light;
+      transition: 0.4s;
+    }
+    li > a:hover {
+      box-shadow: inset 0 -100px 0 $color-secondary-light;
+      transition: 1.2s;
+    }
+    p > a:hover {
+      box-shadow: inset 0 -100px 0 $color-secondary-light;
+      transition: 1.2s;
     }
 
     p {
@@ -52,8 +67,14 @@
     }
 
     hr {
-      width: 50%;
-      min-width: 200px;
+      // width: 70%;
+      // min-width: 200px;
+      width: 90%;
+      top: 50%;
+      position: relative;
+      height: 2px;
+      border: none;
+      background: $color-secondary-light;
     }
 
     video {
@@ -228,21 +249,7 @@
 @include breakpoint-sm {
   .content {
     &__body {
-      :not(h3) a { 
-        text-decoration: none;
-        color: $color-gray;
-        box-sizing: border-box;
-        box-shadow: inset 0 -3px 0 $color-secondary-light;
-        transition: 0.4s;
-      }
-      li > a:hover {
-        box-shadow: inset 0 -100px 0 $color-secondary-light;
-        transition: 1.2s;
-      }
-      p > a:hover {
-        box-shadow: inset 0 -100px 0 $color-secondary-light;
-        transition: 1.2s;
-      }
+
       blockquote {
         margin: 0 auto;
         padding: 0 23px 0 25px;
@@ -317,11 +324,7 @@
     }
 
     &__body {
-      p, li {
-        font-size: $typographic-base-font-size * 1.25;
-        @include line-height(1.25);
-      }
-
+      // for half and full screens
       p {
         @include margin-bottom(1.125);
       }
