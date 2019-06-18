@@ -15,12 +15,13 @@ var bgColors = { "Default": "#81b71a",
 var styles = {
   base: {
     fontWeight: 'bold',
+    fontSize: '12.5px',
     textTransform: 'uppercase',
   },
 };
 var styles2 = {
   base: {
-    padding: '5px' && '5px',
+    padding: '5px' && '4px',
     display: 'inline-block',
     backgroundColor: bgColors.White,
     textAlign: 'center',
