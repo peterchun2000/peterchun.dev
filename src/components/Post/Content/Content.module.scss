@@ -37,7 +37,7 @@
   &__body {
     p, li {
       font-size: $typographic-base-font-size * 1.1;
-      @include line-height(1.25);
+      @include line-height(1.125);
     }
     :not(h3) a { 
       text-decoration: none;
