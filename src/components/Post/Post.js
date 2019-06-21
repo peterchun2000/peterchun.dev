@@ -32,9 +32,9 @@ const Post = ({ post, prevPost, nextPost }) => {
         <Content body={html} title={title} subtitle={description} date={date} />
       </div>
 
-      <div className={styles['post__subscribeForm']}>
+      {/* <div className={styles['post__subscribeForm']}>
         <SubscribeForm signupSource={`Post:${slug}`} large />
-      </div>
+      </div> */}
 
       <div className={styles['post__viewSource']}>
         <p>
@@ -44,7 +44,6 @@ const Post = ({ post, prevPost, nextPost }) => {
           </i>
         </p>
       </div>
-
       <div className={styles['post__footer']}>
         <Tags tags={tags} tagSlugs={tagSlugs} />
         {/* <CarbonAd smallOnly /> */}
