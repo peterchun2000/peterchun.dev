@@ -25,42 +25,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $typographic-base-font-size * 2.5;
+  font-size: 2rem;
   @include line-height(2);
   @include margin-top(3);
   @include margin-bottom(1);
 }
 
 h2 {
-  font-size: $typographic-base-font-size * 1.6875;
+  font-size: 1.4rem;
   @include line-height(1.5);
   @include margin-top(1.5);
   @include margin-bottom(.5);
 }
 
 h3 {
-  font-size: $typographic-base-font-size * 1.375;
+  font-size: 1.17rem;
   @include line-height(1);
   @include margin-top(1.5);
   @include margin-bottom(.5);
 }
 
 h4 {
-  font-size: $typographic-base-font-size * 1.2;
+  font-size: 1rem;
   @include line-height(1);
   @include margin-top(1.125);
   @include margin-bottom(.5);
 }
 
 h5 {
-  font-size: $typographic-base-font-size;
+  font-size: .83rem;
   @include line-height(1);
   @include margin-top(1.875);
   @include margin-bottom(.5);
 }
 
 h6 {
-  font-size: $typographic-base-font-size;
+  font-size: .67rem;
   @include line-height(1);
   @include margin-top(1.875);
   @include margin-bottom(.5);
