@@ -1,13 +1,17 @@
 ---
-template: post
 title: How to Make the Most of Your Summer
-slug: how-to-make-the-most-of-your-summer
+date: "2019-06-26T12:00:00.000Z"
+template: "post"
+usesKatex: true
 draft: false
-date: 2019-06-27T00:24:36.477Z
-description: Let me tell you how my summer's going so far and give you some advice.
-category: Life
+slug: "/blog/how-to-make-the-most-of-your-summer/"
+img: "https://images-na.ssl-images-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png"
+category: "Life"
 tags:
-  - Life
+  - "Life"
+description: Let me tell you how my summer's going so far and give you some advice.
+prev: "/blog/welcome-post/"
+next: "/blog/tracking-amazon-prices-for-free/"
 ---
 So uhhhh, its just the start of \*\*Summer\*\* \*\*2019\*\* 🤙
 
