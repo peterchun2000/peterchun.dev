@@ -20,7 +20,7 @@ const Feed = ({ edges }) => (
           </span>
         </div>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>. . . </Link>
+        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read More</Link>
       </div>
     ))}
   </div>
