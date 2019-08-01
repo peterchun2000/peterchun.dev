@@ -9,6 +9,7 @@ img: "https://www.provost.umd.edu/images/UMDAerial.jpg"
 category: "Programming"
 tags:
   - "Tips"
+  - "Programming"
   - "Web Development"
 description: Let me tell you what I've learned from creating something useful from start to finish.
 prev: "/blog/tracking-amazon-prices-for-free/"
