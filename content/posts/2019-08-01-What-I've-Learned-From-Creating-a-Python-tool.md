@@ -27,7 +27,7 @@ next: "/blog/how-to-make-the-most-of-your-summer/"
 
 ​	I had to first figure out how I was going to extract the comments from a Google .docx or .doc file. Well, you can't. But what you can do is download the file as a .html from Google Docs, which contains all the comments with anchor links attaching the comment to the associated text. This kind of made me happy, because I could use beautiful soup (bs4) to parse through the html file, which I've had plenty of experience with. So, I began my journey of figuring out the structure of the html file. 
 
-​	One of the first things I noticed was that each file named their comment span's class differently; it would be c6 in one file and c8 in another. Fortunately, the anchor (<a>) tag neighboring the span contained an id that had the same format across all files, "cmnt**#**". BOOOM! Now, I'm in business!
+​	One of the first things I noticed was that each file named their comment span's class differently; it would be c6 in one file and c8 in another. Fortunately, the anchor tag neighboring the span contained an id that had the same format across all files, "cmnt**#**". BOOOM! Now, I'm in business!
 
 ```html
 <p class="c7">
