@@ -18,17 +18,17 @@ next: "/blog/how-to-make-the-most-of-your-summer/"
 
 ## Background:
 
-​	  As I was nearing the end of my research assistant job, I was tasked with "coding "some interview data. "Coding" in qualitative research isn't about programming, but rather placing theme/sub-themes beside relevant text (usually an interview transcript). However, when you have tens of different themes in one interview and hundreds more across multiple interviews, it can get pretty hectic. For my particle research group, we used google docs or Microsoft word to place comments next to text as our "coding".
+​		As I was nearing the end of my research assistant job, I was tasked with "coding "some interview data. "Coding" in qualitative research isn't about programming, but rather placing theme/sub-themes beside relevant text (usually an interview transcript). However, when you have tens of different themes in one interview and hundreds more across multiple interviews, it can get pretty hectic. For my particle research group, we used google docs or Microsoft word to place comments next to text as our "coding".
 
-​	  I came up with the idea for the user to upload a file or multiple file and have a python program count the number of times a theme came up and display that in a nice pretty table.
+​		I came up with the idea for the user to upload a file or multiple file and have a python program count the number of times a theme came up and display that in a nice pretty table.
 
 ## The Process
 
-​	  This was the first project in which I intended to be used by non-technically literate people. So that meant no command line programs. I actually had to make a UI. However, I didn't design the program surrounding around this principle. Instead, I wanted to create an MVP (Minimal Viable Product), which is essentially just a prototype. 
+​		This was the first project in which I intended to be used by non-technically literate people. So that meant no command line programs. I actually had to make a UI. However, I didn't design the program surrounding around this principle. Instead, I wanted to create an MVP (Minimal Viable Product), which is essentially just a prototype. 
 
-​	  I had to first figure out how I was going to extract the comments from a Google .docx or .doc file. Well, you can't. But what you can do is download the file as a .html from Google Docs, which contains all the comments with anchor links attaching the comment to the associated text. This kind of made me happy, because I could use beautiful soup (bs4) to parse through the html file, which I've had plenty of experience with. So, I began my journey of figuring out the structure of the html file. 
+​		I had to first figure out how I was going to extract the comments from a Google .docx or .doc file. Well, you can't. But what you can do is download the file as a .html from Google Docs, which contains all the comments with anchor links attaching the comment to the associated text. This kind of made me happy, because I could use beautiful soup (bs4) to parse through the html file, which I've had plenty of experience with. So, I began my journey of figuring out the structure of the html file. 
 
-​	  One of the first things I noticed was that each file named their comment span's class differently; it would be c6 in one file and c8 in another. Fortunately, the anchor tag neighboring the span contained an id that had the same format across all files, "cmnt**#**". BOOOM! Now, I'm in business!
+​		One of the first things I noticed was that each file named their comment span's class differently; it would be c6 in one file and c8 in another. Fortunately, the anchor tag neighboring the span contained an id that had the same format across all files, "cmnt**#**". BOOOM! Now, I'm in business!
 
 ```html
 <p class="c7">
@@ -43,9 +43,9 @@ I was now able to grab each individual comment and the text associated with it. 
 
 ### Fuzzy String Matcher
 
-​	  One of the principles that I **did** have in mind from the beginning was for the program to automatically take care of formatting and spelling. This was something I was most worried about, since everyone seemed to have a different way of formatting their comments and some would use abbreviations for words like community college (CC). 
+​	One of the principles that I **did** have in mind from the beginning was for the program to automatically take care of formatting and spelling. This was something I was most worried about, since everyone seemed to have a different way of formatting their comments and some would use abbreviations for words like community college (CC). 
 
-​	  Luckily, after doing a bit of research I found out about fuzzy string matching, which took care of my spelling problem. However, some comments may look like this:
+​	Luckily, after doing a bit of research I found out about fuzzy string matching, which took care of my spelling problem. However, some comments may look like this:
 
 ```html
 Student Factors: motivation (intrinsic) 
@@ -69,9 +69,9 @@ This possess a problem because, simple fussy string matching snippets only work 
 presentation <==> presntions 
 ```
 
-​	  They can't find matching words within a larger body of text. So if I just wanted to check if the comment contained the word "motivation", I'd have to do some string manipulation to isolate just that word, which is pretty hard when everyone uses a different format: colon between the main theme, parentheses, lack of main theme, etc. 
+​		They can't find matching words within a larger body of text. So if I just wanted to check if the comment contained the word "motivation", I'd have to do some string manipulation to isolate just that word, which is pretty hard when everyone uses a different format: colon between the main theme, parentheses, lack of main theme, etc. 
 
-​	  So, the better option would be to use a more complex fuzzy string matcher that went through each group of letters in a body of text and make multiple checks per comment. For reference this is the code I used:
+​		So, the better option would be to use a more complex fuzzy string matcher that went through each group of letters in a body of text and make multiple checks per comment. For reference this is the code I used:
 
 ```python
 def fuzzy_finder(needle, hay):
@@ -108,6 +108,11 @@ needles = needle.split('|')
 Well I guess this would be a good transition into how I structured my data. 
 
 ### Data Structure
+
+​		One of the regrets looking back at my project was not implementing a database like SQL or Sqlite from the start. The way I programmed the data structure was with a Dictionary of Themes that mapped to a SubTheme. Themes were strings, while SubThemes were classes with a few instance variables. Since, I didn't place any of this data into an actual database, they were stored in memory and temporary; once the user closes out the website, the data is gone. This isn't so much of a problem, however this made it very difficult to exchange data stored in memory across multiple requests. After tons of research, I came across Flask g variables, which simply allows you to have a unique global variable per session. This worked with an integer variable, threshold value, but a json error was thrown when I tried to use it on my main Dictionary. This was because, my data structure was too complicated due to the multiple classes within the Dict. 
+
+​		I became really frustrated with fixing this that, I just decided to try to program a way to display the chart and comments in one POST request. My design plan was to have a chart with a column at the very right that held a button that would expand the chart accordion style and display the comments. This ended up working, however a lot of the code to display the chart was "hacky". Not my proudest work. But I were to work on this project a bit longer, I would defiantly have a log in system and a full out database so that multiple different projects can utilize a modular website. 
+
 
 
 
