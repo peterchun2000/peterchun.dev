@@ -23,7 +23,7 @@ module.exports = {
   ],
   author: {
     name: 'Peter Chun',
-    photo: '/photo2.png',
+    photo: '/photo2-large.png',
     photoLarge: '/photo2-large.png',
     bio: 'Computer Science at the University of Maryland, College Park (UMD). I blog about <a href="/tag/web-development/">Web Development</a>, <a href="/tag/programming/">Programming</a>, and <a href="/tags/">more topics</a>.',
     contacts: {
